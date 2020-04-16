@@ -1,0 +1,314 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+$monserrat-font: 'Montserrat',
+sans-serif;
+$vida-font: 'Vidaloka',
+serif;
+
+.wrapper {
+
+    .hero {
+        min-height: 100vh;
+        padding: 0 2em 6em;
+        background-image: url(https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg);
+        background-size: cover;
+        background-position: center;
+        background-color: #999;
+        background-blend-mode: multiply;
+
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            $color-logo: #fff;
+
+            .logo p {
+                font-family: $vida-font;
+                font-size: 3em;
+                color: $color-logo;
+            }
+
+            .nav {
+                display: flex;
+                font-family: $monserrat-font;
+
+                .link {
+                    padding: 10px;
+                    margin-right: 10px;
+                    color: #FFF;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-family: $monserrat-font;
+
+                    &.link-button {
+                        border: 2px solid #FFF;
+                    }
+                }
+            }
+
+        }
+
+        .hero-title {
+            margin: 6em 0;
+
+            $color-font-title: #ffffff;
+
+            .hero-title-first {
+                font-family: $vida-font;
+                font-size: 5em;
+                color: $color-font-title;
+                margin-bottom: 0.3em;
+            }
+
+            .hero-subtitle {
+                color: $color-font-title;
+                font-family: $monserrat-font;
+                font-size: 1.6em;
+                margin-bottom: 1em;
+            }
+
+            .hero-linea {
+                margin-top: 0 auto 1em;
+                width: 50px;
+                border: 1px solid #fff;
+            }
+        }
+
+        $color-text-slow: #ffffff;
+
+        .slow-text {
+            text-align: center;
+            max-width: 450px;
+            margin: 0 auto;
+            color: $color-text-slow;
+
+            .slow-text-first {
+                font-size: 3em;
+                margin-bottom: 0.2em;
+            }
+
+            .slow-text-five {
+                font-family: $monserrat-font;
+                font-size: 1.2em;
+                margin-bottom: 1em;
+            }
+
+            .linea-slow {
+                margin: 0 auto 1em;
+                border: 1px solid #fff;
+                width: 50px;
+            }
+
+            .text-from-slow {
+                line-height: 1.6em;
+            }
+        }
+
+    }
+
+    .lastest-articles {
+        background-color: #333;
+        padding: 5em 2em 8em;
+
+        $color-articles: #ffffff;
+
+        .articles {
+            text-align: center;
+            max-width: 450px;
+            margin: 0 auto 2.4em;
+
+            .lastest-h4 {
+                font-size: 3em;
+                color: $color-articles;
+                margin-bottom: 0.2em;
+                font-family: $vida-font;
+            }
+
+            .lastest-h5 {
+                font-size: 1.2em;
+                color: $color-articles;
+                margin-bottom: 1em;
+                font-family: $monserrat-font;
+            }
+
+            .articles-linea {
+                margin: 0 auto 1em;
+                border: 1px solid #fff;
+                width: 50px;
+            }
+        }
+
+        .images {
+            display: flex;
+            margin: 0 -20px;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
+
+            $bgc-images-card: #444;
+
+            .images-card {
+                height: 400px;
+                flex-grow: 1;
+                background-color: $bgc-images-card;
+                margin: 10px;
+                box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+
+                &:nth-child(1) {
+                    background-image: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=282&q=80);
+                    transition: transform 1s all;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+
+                &:nth-child(2) {
+                    background-image: url(https://images.unsplash.com/photo-1517832349388-a54430ac9af0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=342&q=80);
+                    transition: transform 1s all;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+
+                &:nth-child(3) {
+                    background-image: url(https://images.unsplash.com/photo-1528118154775-39e17bd60db4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=788&q=80);
+                    transition: transform 1s all;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    height: 200px;
+                }
+
+                .images-h4 {
+                    font-family: $monserrat-font;
+                    color: #fff;
+                    font-size: 1.5em;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0.3em;
+                    padding-top: 1em;
+                }
+
+                .images-p {
+                    font-family: $monserrat-font;
+                    color: #fff;
+                    font-size: 1em;
+                    padding: 1em;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .mini-linea {
+                    margin: 0 auto 1em;
+                    border: 1px solid #fff;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    $bgc-newsletter: #222;
+    $color-newsletter: #fff;
+
+    .newsletter {
+        background-color: $bgc-newsletter;
+        padding: 4em 2em;
+
+        .subscribe {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto 3em;
+
+            .subscribe-title {
+                color: $color-newsletter;
+                font-family: $vida-font;
+                font-size: 3em;
+            }
+
+            .subscribe-subtitle {
+                color: $color-newsletter;
+                font-family: $monserrat-font;
+                font-size: 0.9em;
+                margin-top: 0.3em;
+                line-height: 3em;
+            }
+        }
+
+        .newsletter-form {
+            max-width: 450px;
+            margin: 0 auto;
+
+            .email-input {
+                display: block;
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 1em;
+                background-color: #333;
+                border: none;
+                color: #d3d3d3;
+                font-family: $monserrat-font;
+            }
+
+            .button-submit {
+                color: #fff;
+                padding: 15px 50px;
+                font-family: $monserrat-font;
+                display: block;
+                margin: 0 auto;
+                background-color: transparent;
+                border: 1.4px solid #fff;
+                transition: transform 1s all;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    $bgc-footer: #333;
+    $color-footer: #fff;
+
+    .about {
+        background-color: $bgc-footer;
+        padding: 4em 2em;
+        display: flex;
+        justify-content: space-between;
+
+        .logo-footer {
+            font-family: $vida-font;
+            font-size: 3em;
+            color: $color-footer;
+        }
+
+        .links-footer {
+
+            .links-footer-a {
+                font-family: $monserrat-font;
+                text-decoration: none;
+                color: $color-footer;
+                font-size: 1.4em;
+                margin-left: 1em;
+                transition: transform 1s all;
+            }
+        }
+    }
+}

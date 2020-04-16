@@ -1,0 +1,340 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .hero {
+  min-height: 100vh;
+  padding: 0 2em 6em;
+  background-image: url(https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #999;
+  background-blend-mode: multiply;
+}
+
+.wrapper .hero .header {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .hero .header .logo p {
+  font-family: "Vidaloka", serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+.wrapper .hero .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .hero .header .nav .link {
+  padding: 10px;
+  margin-right: 10px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .hero .header .nav .link.link-button {
+  border: 2px solid #FFF;
+}
+
+.wrapper .hero .hero-title {
+  margin: 6em 0;
+}
+
+.wrapper .hero .hero-title .hero-title-first {
+  font-family: "Vidaloka", serif;
+  font-size: 5em;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+}
+
+.wrapper .hero .hero-title .hero-subtitle {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.wrapper .hero .hero-title .hero-linea {
+  margin-top: 0 auto 1em;
+  width: 50px;
+  border: 1px solid #fff;
+}
+
+.wrapper .hero .slow-text {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.wrapper .hero .slow-text .slow-text-first {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.wrapper .hero .slow-text .slow-text-five {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.wrapper .hero .slow-text .linea-slow {
+  margin: 0 auto 1em;
+  border: 1px solid #fff;
+  width: 50px;
+}
+
+.wrapper .hero .slow-text .text-from-slow {
+  line-height: 1.6em;
+}
+
+.wrapper .lastest-articles {
+  background-color: #333;
+  padding: 5em 2em 8em;
+}
+
+.wrapper .lastest-articles .articles {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto 2.4em;
+}
+
+.wrapper .lastest-articles .articles .lastest-h4 {
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 0.2em;
+  font-family: "Vidaloka", serif;
+}
+
+.wrapper .lastest-articles .articles .lastest-h5 {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .lastest-articles .articles .articles-linea {
+  margin: 0 auto 1em;
+  border: 1px solid #fff;
+  width: 50px;
+}
+
+.wrapper .lastest-articles .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .lastest-articles .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.wrapper .lastest-articles .images .images-card {
+  height: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #444;
+  margin: 10px;
+  -webkit-box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1511207538754-e8555f2bc187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=282&q=80);
+  -webkit-transition: -webkit-transform 1s all;
+  transition: -webkit-transform 1s all;
+  transition: transform 1s all;
+  transition: transform 1s all, -webkit-transform 1s all;
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(1):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1517832349388-a54430ac9af0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=342&q=80);
+  -webkit-transition: -webkit-transform 1s all;
+  transition: -webkit-transform 1s all;
+  transition: transform 1s all;
+  transition: transform 1s all, -webkit-transform 1s all;
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(2):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1528118154775-39e17bd60db4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=788&q=80);
+  -webkit-transition: -webkit-transform 1s all;
+  transition: -webkit-transform 1s all;
+  transition: transform 1s all;
+  transition: transform 1s all, -webkit-transform 1s all;
+}
+
+.wrapper .lastest-articles .images .images-card:nth-child(3):hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .lastest-articles .images .images-card {
+    height: 200px;
+  }
+}
+
+.wrapper .lastest-articles .images .images-card .images-h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3em;
+  padding-top: 1em;
+}
+
+.wrapper .lastest-articles .images .images-card .images-p {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 1em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .lastest-articles .images .images-card .mini-linea {
+  margin: 0 auto 1em;
+  border: 1px solid #fff;
+  width: 50px;
+}
+
+.wrapper .newsletter {
+  background-color: #222;
+  padding: 4em 2em;
+}
+
+.wrapper .newsletter .subscribe {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 3em;
+}
+
+.wrapper .newsletter .subscribe .subscribe-title {
+  color: #fff;
+  font-family: "Vidaloka", serif;
+  font-size: 3em;
+}
+
+.wrapper .newsletter .subscribe .subscribe-subtitle {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  margin-top: 0.3em;
+  line-height: 3em;
+}
+
+.wrapper .newsletter .newsletter-form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.wrapper .newsletter .newsletter-form .email-input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 1em;
+  background-color: #333;
+  border: none;
+  color: #d3d3d3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper .newsletter .newsletter-form .button-submit {
+  color: #fff;
+  padding: 15px 50px;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1.4px solid #fff;
+  -webkit-transition: -webkit-transform 1s all;
+  transition: -webkit-transform 1s all;
+  transition: transform 1s all;
+  transition: transform 1s all, -webkit-transform 1s all;
+}
+
+.wrapper .newsletter .newsletter-form .button-submit:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.wrapper .about {
+  background-color: #333;
+  padding: 4em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .about .logo-footer {
+  font-family: "Vidaloka", serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+.wrapper .about .links-footer .links-footer-a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  margin-left: 1em;
+  -webkit-transition: -webkit-transform 1s all;
+  transition: -webkit-transform 1s all;
+  transition: transform 1s all;
+  transition: transform 1s all, -webkit-transform 1s all;
+}
+/*# sourceMappingURL=style.css.map */
